@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+Person(name) =>{
+this.name = name;
+}
+Person.prototype.prefixName = (arr) => {
+return arr.map((character) =>{
+return this.name + character;
+}, this);
+};
+
+<!-- Assignment 2.1.2  -->
+
+let dusr={first: 'Avneesh', last:'Shakya',Dob:'12-12-2002'};
+let {frst:f,lst:l,Ddb:d}=dusr;
+//function udpnrt
+
+function udprnt(dobj){
+console.log(`User details are ${frst} ${lst} and Date of birth is ${Ddb}. `);
+};
+udpnrt(dusr);
+
+<!-- Assignment 2.1.3  -->
+
+var frnds=["raja","kumar","sam","john","vicky","senthil"];
+
+var[r,k,s,j,v,s]=frnds;
+
+console.log(r);
+console.log(k);
+console.log(s);
+console.log(j);
+console.log(v);
+console.log(s);
+
+<!-- Assignment 2.1.4  -->
+
+function wildfood(good){
+let food={one:'Meow Mix',two:'catfood',three:'dogmix'};
+console.log(food);
+};
+
+<!--calling from outside -->
+
+let sood={one:'a',two:'b',three:'c'};
+console.log(wildfood(sood));
+
+
+</script>
+
+</head>
+<body>
+</body>
+
+</html>
